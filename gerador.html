@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="media/rocket.ico" type="image/x-icon"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <title>Gerador de CPF</title>
+</head>
+<body>
+  <nav class="blue-grey lighten-5">
+     <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo logo blue-grey-text">CPF Online!</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down links">
+        <li><a class="blue-grey-text" href="gerador.html">Gerar</a></li>
+        <li><a class="blue-grey-text" href="validador.html">Validar</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="row">
+    <form class="col m6 l6 s12 container" id="gera">
+      <h4 class="center blue-grey-text text-darken-3">Bem-vindo ao Gerador de CPF!</h4>
+      <div id="cpfGerado" class="blue-grey-text text-darken-1"></div>
+      <div class="center">
+        <button class="btn" id="enviar" type="submit" onclick="geraCPF()";return="false">Gerar</button>
+      </div>
+    </form>
+    <div class="col m4 l6 s12 container">
+      <div class="card-panel blue-grey lighten-4">
+        <h5 class="blue-grey-text text-darken-3">O que é CPF?</h5>
+        <p>CPF (Cadastro de Pessoa Física) é um número composto por 11 dígitos, o CPF é o cadastro da Receita Federal brasileira no qual devem estar todos os contribuintes (pessoas físicas brasileiras ou estrangeiras com negócios no Brasil). O CPF armazena informações fornecidas pelo próprio contribuinte e por outros sistemas da Receita Federal.</p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="js/generator-cpf.js"></script>
+</body>
+</html>
